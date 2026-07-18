@@ -1,0 +1,312 @@
+/* Sales challenges visual parity */
+.strix-sales-challenges {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  height: 1014.453125px;
+  align-items: center;
+  flex-direction: column;
+  border: 12px solid var(--color-paper);
+  border-radius: 28px;
+  padding: 120px;
+  color: var(--color-paper);
+  text-align: start;
+  background: none;
+}
+
+.strix-sales-challenges::before {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-paper);
+  box-shadow:
+    calc(100vw - 64px) 0 var(--color-paper),
+    0 950.453125px var(--color-paper),
+    calc(100vw - 64px) 950.453125px var(--color-paper);
+  content: "";
+  pointer-events: none;
+}
+
+.strix-sales-challenges::after {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  border-radius: 16px;
+  background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-2880x1700_v-frms_webp_a29f771b-7bbc-46ed-a8b9-1c9ebbb83b61_regular.webp")
+    center / cover no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.strix-sales-challenges__title,
+.strix-sales-challenges__description {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  word-spacing: 1px;
+}
+
+.strix-sales-challenges__title {
+  height: 50.390625px;
+}
+
+.strix-sales-challenges__description {
+  margin-top: 24px;
+}
+
+.strix-sales-challenges__cards {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  width: 1000px;
+  max-width: 100%;
+  height: 533.671875px;
+  align-items: stretch;
+  flex: none;
+  gap: 10px;
+  margin: 56px 0 0;
+  padding: 0;
+  text-align: start;
+}
+
+.strix-challenge-card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  align-items: flex-start;
+  flex: 1 1 0;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px 10px 40px;
+  background: none;
+}
+
+.strix-challenge-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  border-radius: inherit;
+  background: var(--challenge-card-background) center / cover no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.strix-challenge-card::after {
+  content: none;
+}
+
+.strix-challenge-card--missing-primary-data {
+  --challenge-card-background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_b4bcaec8-f3ae-43ea-a214-fc98ed548e04_small.webp");
+}
+
+.strix-challenge-card--unused-transcripts {
+  --challenge-card-background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_d0023d19-c1e9-4e25-9968-1834fede8f84_small.webp");
+}
+
+.strix-challenge-card--unused-insights {
+  --challenge-card-background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_ecb15d0d-d077-4468-9f6a-b86e7d1d2374_small.webp");
+}
+
+.strix-challenge-card__visual {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 8px;
+  visibility: visible;
+  object-fit: fill;
+}
+
+.strix-challenge-card--missing-primary-data .strix-challenge-card__visual {
+  content: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x640_v-fs_webp_9212f526-98a9-4c9d-8570-333623adf354_small.webp");
+}
+
+.strix-challenge-card--unused-transcripts .strix-challenge-card__visual {
+  content: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x640_v-fs_webp_6ccef485-8b87-4c64-9d07-84b192b89eb6_small.webp");
+}
+
+.strix-challenge-card--unused-insights .strix-challenge-card__visual {
+  content: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x640_v-fs_webp_0a5387fc-929b-4ab3-98f2-dc5c140c95da_small.webp");
+}
+
+.strix-challenge-card__title,
+.strix-challenge-card__description {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  width: calc(100% - 32px);
+  max-width: calc(100% - 32px);
+  align-items: center;
+  justify-content: flex-start;
+  flex: none;
+  margin-inline: 16px;
+  padding: 0;
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  word-spacing: 1px;
+}
+
+.strix-challenge-card__title {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-feature-settings: "palt";
+}
+
+.strix-challenge-card__description {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1280px) and (min-width: 841px) {
+  .strix-sales-challenges {
+    height: 1012.53125px;
+    padding-inline: 80px;
+  }
+
+  .strix-sales-challenges::before {
+    box-shadow:
+      calc(100vw - 64px) 0 var(--color-paper),
+      0 948.53125px var(--color-paper),
+      calc(100vw - 64px) 948.53125px var(--color-paper);
+  }
+
+  .strix-sales-challenges__cards {
+    height: 537.34375px;
+  }
+
+  .strix-sales-challenges__title {
+    height: 44.796875px;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-sales-challenges {
+    height: 864px;
+    align-items: center;
+    border-width: 8px;
+    border-radius: 20px;
+    padding: 80px 0;
+  }
+
+  .strix-sales-challenges::before {
+    top: 10px;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+    box-shadow:
+      calc(100vw - 42px) 0 var(--color-paper),
+      0 822px var(--color-paper),
+      calc(100vw - 42px) 822px var(--color-paper);
+  }
+
+  .strix-sales-challenges::after {
+    border-radius: 12px;
+  }
+
+  .strix-sales-challenges__title,
+  .strix-sales-challenges__description {
+    width: calc(100% - 80px);
+  }
+
+  .strix-sales-challenges__cards {
+    width: 100%;
+    max-width: 100%;
+    height: 501px;
+    overflow: auto hidden;
+    margin-top: 40px;
+    padding-inline: 40px;
+  }
+
+  .strix-challenge-card {
+    width: 300px;
+    min-width: 0;
+    flex: none;
+  }
+
+  .strix-sales-challenges__title {
+    height: 42px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 840px) {
+  .strix-sales-challenges::after,
+  .strix-sales-challenges__title,
+  .strix-sales-challenges__description,
+  .strix-sales-challenges__cards {
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-sales-challenges {
+    height: 902.28125px;
+  }
+
+  .strix-sales-challenges__title,
+  .strix-sales-challenges__description,
+  .strix-sales-challenges__cards {
+    top: 0.125px;
+  }
+
+  .strix-sales-challenges::before {
+    top: 10.125px;
+  }
+
+  .strix-sales-challenges::after {
+    top: 0.125px;
+    bottom: -0.125px;
+  }
+
+  .strix-sales-challenges__title,
+  .strix-sales-challenges__description {
+    width: calc(100% - 40px);
+  }
+
+  .strix-sales-challenges__description {
+    height: 151.125px;
+  }
+
+  .strix-sales-challenges__title {
+    height: 33.59375px;
+  }
+
+  .strix-sales-challenges::before {
+    box-shadow:
+      calc(100vw - 42px) 0 var(--color-paper),
+      0 860.28125px var(--color-paper),
+      calc(100vw - 42px) 860.28125px var(--color-paper);
+  }
+
+  .strix-sales-challenges__cards {
+    height: 477.5625px;
+    padding-inline: 20px;
+  }
+
+  .strix-challenge-card {
+    width: 280px;
+    padding: 8px 8px 40px;
+  }
+
+  .strix-challenge-card__description {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 25.2px;
+  }
+}

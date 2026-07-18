@@ -1,0 +1,1103 @@
+/* Sales challenges */
+.strix-sales-challenges {
+  padding: 190px 14% 110px;
+  text-align: center;
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-2880x1700_v-frms_webp_a29f771b-7bbc-46ed-a8b9-1c9ebbb83b61_regular.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.strix-sales-challenges::before {
+  content: none;
+}
+
+.strix-sales-challenges__title {
+  display: none;
+}
+
+.strix-sales-challenges__description {
+  width: 680px;
+  max-width: 100%;
+  margin-inline: auto;
+  color: var(--color-muted-on-dark);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.strix-sales-challenges__cards {
+  display: grid;
+  max-width: 1000px;
+  margin: 58px auto 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: left;
+}
+
+.strix-challenge-card {
+  overflow: hidden;
+  border-radius: var(--radius-small);
+  padding: 10px 10px 38px;
+  background-position: center;
+  background-size: cover;
+}
+
+.strix-challenge-card--missing-primary-data {
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_b4bcaec8-f3ae-43ea-a214-fc98ed548e04_small.webp");
+}
+
+.strix-challenge-card--unused-transcripts {
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_d0023d19-c1e9-4e25-9968-1834fede8f84_small.webp");
+}
+
+.strix-challenge-card--unused-insights {
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-640x1020_v-fs_webp_ecb15d0d-d077-4468-9f6a-b86e7d1d2374_small.webp");
+}
+
+.strix-challenge-card__visual {
+  width: 100%;
+  border-radius: var(--radius-small);
+  visibility: visible;
+}
+
+.strix-challenge-card__title {
+  padding: 24px 16px 0;
+  font-family: var(--font-japanese);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.strix-challenge-card__description {
+  padding: 15px 16px 0;
+  color: var(--color-muted-on-dark);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Shared editorial section structure */
+.strix-customer-stories,
+.strix-product-news {
+  padding: 115px var(--space-page) 80px;
+  background: var(--color-paper);
+}
+
+.strix-product-news {
+  background: linear-gradient(#eeeff5, var(--color-paper));
+}
+
+.strix-customer-stories__title,
+.strix-product-news__title {
+  font-family: var(--font-japanese);
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.strix-customer-stories__all-link,
+.strix-product-news__all-link,
+.strix-customer-stories__footer-link,
+.strix-product-news__footer-link {
+  position: absolute;
+  top: 120px;
+  right: var(--space-page);
+  border: 1px solid var(--color-ink-soft);
+  border-radius: var(--radius-small);
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    color var(--motion-fast),
+    background var(--motion-fast);
+}
+
+.strix-customer-stories__all-link:hover,
+.strix-product-news__all-link:hover,
+.strix-customer-stories__footer-link:hover,
+.strix-product-news__footer-link:hover {
+  color: var(--color-paper);
+  background: var(--color-ink);
+}
+
+.strix-customer-stories__footer-link,
+.strix-product-news__footer-link {
+  display: none;
+}
+
+.strix-customer-stories__cards,
+.strix-product-news__cards {
+  display: grid;
+  margin-top: 82px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.strix-story-card,
+.strix-news-card {
+  min-width: 0;
+}
+
+.strix-story-card__link,
+.strix-news-card__link {
+  display: block;
+}
+
+.strix-story-card__link {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.strix-story-card__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-small);
+  aspect-ratio: 4 / 2.65;
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.strix-story-card__thumbnail,
+.strix-news-card__thumbnail {
+  width: 100%;
+  object-fit: cover;
+  transition: transform var(--motion-standard);
+}
+
+.strix-story-card__thumbnail {
+  height: 100%;
+}
+
+.strix-story-card__link:hover .strix-story-card__thumbnail,
+.strix-news-card__link:hover .strix-news-card__thumbnail {
+  transform: scale(1.035);
+}
+
+.strix-story-card__company-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95px;
+  height: 62px;
+  border-radius: 0 var(--radius-small) 0 0;
+  padding: 7px;
+  object-fit: contain;
+  background: var(--color-paper);
+}
+
+.strix-story-card__company,
+.strix-story-card__category {
+  display: inline;
+  grid-row: 1;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.strix-story-card__company {
+  grid-column: 1;
+  color: var(--color-brand);
+}
+
+.strix-story-card__category {
+  grid-column: 2;
+}
+
+.strix-story-card__company::before {
+  margin-right: 7px;
+  content: "•";
+}
+
+.strix-story-card__title,
+.strix-news-card__title {
+  margin-top: 18px;
+  font-family: var(--font-japanese);
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.strix-story-card__title,
+.strix-story-card__excerpt {
+  grid-column: 1 / -1;
+}
+
+.strix-story-card__excerpt,
+.strix-news-card__excerpt {
+  margin-top: 15px;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.strix-news-card__thumbnail {
+  height: 217px;
+  border-radius: var(--radius-small);
+}
+
+@media (max-width: 1280px) {
+  .strix-sales-challenges {
+    padding-inline: 10%;
+  }
+
+  .strix-customer-stories,
+  .strix-product-news {
+    padding-inline: 8.3%;
+  }
+
+  .strix-customer-stories__cards,
+  .strix-product-news__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .strix-customer-stories__all-link,
+  .strix-product-news__all-link {
+    right: 8.3%;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-sales-challenges {
+    padding: 150px 5% 60px;
+  }
+
+  .strix-sales-challenges__description {
+    font-size: 13px;
+  }
+
+  .strix-sales-challenges__cards {
+    margin-top: 40px;
+  }
+
+  .strix-challenge-card__title {
+    font-size: 16px;
+  }
+
+  .strix-challenge-card__description {
+    font-size: 12px;
+  }
+
+  .strix-customer-stories,
+  .strix-product-news {
+    padding: 105px 6% 60px;
+  }
+
+  .strix-customer-stories__title,
+  .strix-product-news__title {
+    font-size: 30px;
+  }
+
+  .strix-customer-stories__cards,
+  .strix-product-news__cards {
+    margin-top: 55px;
+    gap: 18px;
+  }
+
+  .strix-customer-stories__all-link,
+  .strix-product-news__all-link {
+    top: 110px;
+    right: 6%;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-sales-challenges {
+    padding: 92px 16px 30px;
+  }
+
+  .strix-sales-challenges__title {
+    display: block;
+    font-family: var(--font-japanese);
+    font-size: 25px;
+  }
+
+  .strix-sales-challenges__description {
+    width: 334px;
+    margin-top: 24px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+  }
+
+  .strix-sales-challenges__cards {
+    display: flex;
+    width: max-content;
+    margin: 40px 12px 0;
+    gap: 8px;
+  }
+
+  .strix-challenge-card {
+    width: 290px;
+    flex: none;
+    padding-bottom: 25px;
+  }
+
+  .strix-challenge-card__title {
+    width: 264px;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+  }
+
+  .strix-challenge-card__description {
+    width: 264px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+  }
+
+  .strix-customer-stories,
+  .strix-product-news {
+    padding: 100px 20px 45px;
+  }
+
+  .strix-customer-stories__title,
+  .strix-product-news__title {
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+  }
+
+  .strix-customer-stories__all-link,
+  .strix-product-news__all-link {
+    display: none;
+  }
+
+  .strix-customer-stories__cards,
+  .strix-product-news__cards {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-top: 40px;
+  }
+
+  .strix-story-card__title,
+  .strix-news-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+  }
+
+  .strix-story-card__excerpt,
+  .strix-news-card__excerpt {
+    color: rgb(3 3 15 / 70%);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+  }
+
+  .strix-news-card__thumbnail {
+    height: 198px;
+    background: #f1efef;
+    opacity: 0;
+  }
+
+  .strix-customer-stories__footer-link,
+  .strix-product-news__footer-link {
+    position: static;
+    display: block;
+    width: max-content;
+    margin: 42px auto 0;
+  }
+}
+
+.strix-news-card__thumbnail {
+  visibility: visible;
+}
+
+.strix-news-card__link::before {
+  content: none;
+}
+
+/* Problem list and case studies: measured v2 geometry */
+.strix-sales-challenges {
+  height: 1014.453125px;
+  border: 0;
+  border-radius: 0;
+  padding: 132px;
+  padding-bottom: 0;
+  background-color: var(--color-paper);
+  background-image: none;
+}
+
+.strix-sales-challenges::before {
+  inset: 12px;
+  z-index: 0;
+  border-radius: 16px;
+  padding: 0;
+  background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-2880x1700_v-frms_webp_a29f771b-7bbc-46ed-a8b9-1c9ebbb83b61_regular.webp");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  mask: none;
+}
+
+.strix-sales-challenges > * {
+  position: relative;
+  z-index: 1;
+}
+
+.strix-sales-challenges__title {
+  display: block;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  line-height: 50.4px;
+}
+
+.strix-sales-challenges__description {
+  width: auto;
+  margin-top: 24px;
+  color: var(--color-text-on-dark);
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  line-height: 28.8px;
+}
+
+.strix-sales-challenges__cards {
+  max-width: 1000px;
+  margin-top: 56px;
+  gap: 10px;
+}
+
+.strix-challenge-card {
+  height: 533.671875px;
+  padding: 10px 10px 40px;
+}
+
+.strix-challenge-card__title {
+  margin: 24px 16px 0;
+  padding: 0;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+}
+
+.strix-challenge-card__description {
+  margin: 12px 16px 0;
+  padding: 0;
+  color: var(--color-text-on-dark);
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  line-height: 27px;
+}
+
+.strix-customer-stories {
+  height: 871.390625px;
+  padding: 120px;
+}
+
+.strix-customer-stories__title {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  line-height: 50.4px;
+}
+
+.strix-customer-stories__all-link,
+.strix-customer-stories__footer-link {
+  height: 49px;
+  padding: 16px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  line-height: 15px;
+}
+
+.strix-customer-stories__all-link {
+  top: 120.6875px;
+  right: 120px;
+}
+
+.strix-customer-stories__cards {
+  margin-top: 80px;
+  gap: 24px;
+}
+
+.strix-story-card__media {
+  margin-top: 20px;
+  aspect-ratio: 3 / 2;
+  background-position: center;
+  background-size: cover;
+}
+
+.strix-story-card__thumbnail {
+  visibility: hidden;
+}
+
+.strix-story-card:nth-child(1) .strix-story-card__media {
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-1536x1024_v-fms_webp_5ec1653e-4eac-48b8-a949-2595257acca6.png");
+}
+
+.strix-story-card:nth-child(2) .strix-story-card__media {
+  background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-1999x1332_v-frms_webp_97763892-e337-44bb-a338-bf703aec1df9.jpg");
+}
+
+.strix-story-card:nth-child(3) .strix-story-card__media {
+  background-image: url("https://storage.googleapis.com/studio-cms-assets/projects/wQOV7BZNqD/s-5970x3980_v-frms_webp_b881f309-653e-459a-9608-1f4ae160ef81.jpg");
+}
+
+.strix-story-card__company-logo {
+  bottom: 8px;
+  left: 20.6667px;
+  width: 74.6667px;
+  height: 56px;
+}
+
+.strix-story-card__company,
+.strix-story-card__category {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.39px;
+  line-height: 22.1px;
+}
+
+.strix-story-card__title {
+  margin: 20px 10px 0;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+}
+
+.strix-story-card__excerpt {
+  margin: 12px 10px 0;
+  color: rgb(3 3 15 / 70%);
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  line-height: 27px;
+}
+
+@media (max-width: 1280px) {
+  .strix-sales-challenges {
+    height: 1012.53125px;
+    padding-inline: 84px;
+  }
+
+  .strix-sales-challenges__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    line-height: 44.8px;
+  }
+
+  .strix-challenge-card {
+    height: 537.34375px;
+  }
+
+  .strix-customer-stories {
+    height: 1515.1875px;
+    padding: 120px 80px;
+  }
+
+  .strix-customer-stories__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    line-height: 44.8px;
+  }
+
+  .strix-customer-stories__all-link {
+    top: 120px;
+    right: 80px;
+  }
+
+  .strix-customer-stories__cards {
+    margin-top: 84.2px;
+    row-gap: 56px;
+  }
+
+  .strix-story-card__link {
+    height: auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-sales-challenges {
+    height: 864px;
+    padding: 88px 48px 0;
+  }
+
+  .strix-sales-challenges::before {
+    inset: 8px;
+    border-radius: 12px;
+  }
+
+  .strix-sales-challenges__title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    line-height: 42px;
+  }
+
+  .strix-sales-challenges__description {
+    margin-top: 24px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 27px;
+  }
+
+  .strix-sales-challenges__cards {
+    display: flex;
+    width: max-content;
+    margin: 40px 0 0;
+    gap: 10px;
+  }
+
+  .strix-challenge-card {
+    width: 300px;
+    height: 499px;
+    flex: none;
+  }
+
+  .strix-challenge-card__visual {
+    visibility: visible;
+  }
+
+  .strix-challenge-card__title {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 27px;
+  }
+
+  .strix-challenge-card__description {
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 27px;
+  }
+
+  .strix-customer-stories {
+    height: 1094.375px;
+    padding: 120px 40px;
+  }
+
+  .strix-customer-stories__title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    line-height: 42px;
+  }
+
+  .strix-customer-stories__all-link {
+    right: 40px;
+  }
+
+  .strix-customer-stories__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 87px;
+    gap: 20px;
+  }
+
+  .strix-story-card,
+  .strix-story-card__link {
+    width: 100%;
+    height: 215.2px;
+  }
+
+  .strix-story-card__link {
+    position: relative;
+    display: block;
+  }
+
+  .strix-story-card__company,
+  .strix-story-card__category,
+  .strix-story-card__media,
+  .strix-story-card__title,
+  .strix-story-card__excerpt {
+    position: absolute;
+  }
+
+  .strix-story-card__company,
+  .strix-story-card__category {
+    top: 0;
+  }
+
+  .strix-story-card__company {
+    left: 0;
+  }
+
+  .strix-story-card__category {
+    left: auto;
+    margin-left: 14px;
+  }
+
+  .strix-story-card:nth-child(1) .strix-story-card__category {
+    left: 227px;
+  }
+
+  .strix-story-card:nth-child(2) .strix-story-card__category {
+    left: 135.1px;
+  }
+
+  .strix-story-card:nth-child(3) .strix-story-card__category {
+    left: 138.7px;
+  }
+
+  .strix-story-card__media {
+    top: 38.1px;
+    left: 0;
+    width: 38.6047%;
+    height: 177.1px;
+    margin: 0;
+  }
+
+  .strix-story-card__company-logo {
+    display: none;
+  }
+
+  .strix-story-card:nth-child(3) .strix-story-card__media {
+    background-image: url("https://storage.googleapis.com/studio-cms-assets/projects/wQOV7BZNqD/s-5970x3980_v-frms_webp_b881f309-653e-459a-9608-1f4ae160ef81.jpg");
+  }
+
+  .strix-story-card__title,
+  .strix-story-card__excerpt {
+    right: 0;
+    left: calc(38.6047% + 16px);
+    margin: 0;
+  }
+
+  .strix-story-card__title {
+    top: 38.1px;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 27px;
+  }
+
+  .strix-story-card__excerpt {
+    top: 131.1px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-sales-challenges {
+    height: 902.28125px;
+    padding: 88px 28px 0;
+  }
+
+  .strix-sales-challenges__title {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    line-height: 33.6px;
+  }
+
+  .strix-sales-challenges__description {
+    width: auto;
+    margin-top: 24px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 25.2px;
+  }
+
+  .strix-challenge-card {
+    width: 280px;
+    height: 477.6px;
+    padding: 8px 8px 30px;
+  }
+
+  .strix-challenge-card__visual {
+    visibility: visible;
+  }
+
+  .strix-challenge-card__title,
+  .strix-challenge-card__description {
+    width: auto;
+    margin-inline: 16px;
+  }
+
+  .strix-challenge-card__title {
+    margin-top: 24px;
+  }
+
+  .strix-customer-stories {
+    height: 1876.3125px;
+    padding: 120px 20px;
+  }
+
+  .strix-customer-stories__title {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    line-height: 33.6px;
+  }
+
+  .strix-customer-stories__cards {
+    margin-top: 40px;
+    gap: 56px;
+  }
+
+  .strix-story-card__company,
+  .strix-story-card__category {
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    line-height: 20.4px;
+  }
+
+  .strix-story-card:nth-child(1) .strix-story-card__category {
+    left: 210.6px;
+  }
+
+  .strix-story-card:nth-child(2) .strix-story-card__category {
+    left: 125.8px;
+  }
+
+  .strix-story-card:nth-child(3) .strix-story-card__category {
+    left: 129.2px;
+  }
+
+  .strix-story-card,
+  .strix-story-card__link {
+    height: 454.3px;
+  }
+
+  .strix-story-card__media {
+    top: 36.4px;
+    width: 100%;
+    height: 233.3px;
+  }
+
+  .strix-story-card__title,
+  .strix-story-card__excerpt {
+    right: 0;
+    left: 0;
+  }
+
+  .strix-story-card__title {
+    top: 285.7px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+    line-height: 27px;
+  }
+
+  .strix-story-card__excerpt {
+    top: 378.7px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 25.2px;
+  }
+
+  .strix-customer-stories__footer-link {
+    margin-top: 40px;
+  }
+}
+
+/* Product news: measured v2 geometry */
+.strix-product-news {
+  display: block;
+  height: 789.3125px;
+  padding: 120px;
+  background: linear-gradient(#eeeff5, var(--color-paper));
+}
+
+.strix-product-news__title {
+  width: max-content;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  line-height: 50.4px;
+}
+
+.strix-product-news__all-link {
+  top: 120.6875px;
+  right: 120px;
+  height: 49px;
+  padding: 16px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  line-height: 15px;
+  background: var(--color-paper);
+}
+
+.strix-product-news__cards {
+  display: flex;
+  margin-top: 80px;
+  gap: 24px;
+}
+
+.strix-news-card {
+  width: calc(33.33% - 16.08px);
+  min-width: 0;
+  flex: none;
+}
+
+.strix-news-card__link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.strix-news-card__link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  background: #f0efef;
+  content: "";
+}
+
+.strix-news-card__thumbnail {
+  height: auto;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  background: #f0efef;
+  visibility: hidden;
+}
+
+.strix-news-card__title,
+.strix-news-card__excerpt {
+  margin-inline: 10px;
+}
+
+.strix-news-card__title {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  line-height: 30px;
+}
+
+.strix-news-card__excerpt {
+  margin-top: 12px;
+  color: var(--color-ink-soft);
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  line-height: 27px;
+}
+
+@media (max-width: 1280px) {
+  .strix-product-news {
+    height: 1286.5px;
+    padding: 120px 80px 160px;
+  }
+
+  .strix-product-news__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    line-height: 44.8px;
+  }
+
+  .strix-product-news__all-link {
+    top: 120px;
+    right: 80px;
+  }
+
+  .strix-product-news__cards {
+    flex-wrap: wrap;
+    margin-top: 84px;
+  }
+
+  .strix-news-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-product-news {
+    height: 897.171875px;
+    padding: 120px 40px 160px;
+  }
+
+  .strix-product-news__title {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    line-height: 42px;
+  }
+
+  .strix-product-news__all-link {
+    right: 40px;
+  }
+
+  .strix-product-news__cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-top: 84px;
+  }
+
+  .strix-news-card {
+    width: 100%;
+  }
+
+  .strix-news-card__link {
+    display: grid;
+    grid-template-columns: 38.6047% 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 16px;
+  }
+
+  .strix-news-card__thumbnail {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+
+  .strix-news-card__link::before {
+    width: 38.6047%;
+  }
+
+  .strix-news-card__title,
+  .strix-news-card__excerpt {
+    grid-column: 2;
+    margin: 0;
+  }
+
+  .strix-news-card__title {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 27px;
+  }
+
+  .strix-news-card__excerpt {
+    margin-top: 12px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-product-news {
+    height: 1603.90625px;
+    padding: 120px 20px;
+  }
+
+  .strix-product-news__title {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    line-height: 33.6px;
+  }
+
+  .strix-product-news__cards {
+    gap: 42px;
+    margin-top: 40px;
+  }
+
+  .strix-news-card__link {
+    display: block;
+  }
+
+  .strix-news-card__title {
+    margin: 16px 0 0;
+  }
+
+  .strix-news-card__excerpt {
+    margin: 12px 0 0;
+  }
+
+  .strix-news-card__thumbnail {
+    background: #f0efef;
+    opacity: 1;
+  }
+
+  .strix-news-card:first-child .strix-news-card__thumbnail {
+    visibility: visible;
+  }
+
+  .strix-news-card:first-child .strix-news-card__link::before {
+    content: none;
+  }
+
+  .strix-news-card__link::before {
+    width: 100%;
+  }
+}
+
+.strix-news-card__thumbnail {
+  visibility: visible;
+}
+
+.strix-news-card__link::before {
+  content: none;
+}

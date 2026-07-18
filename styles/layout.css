@@ -1,0 +1,193 @@
+main > section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.strix-hero {
+  height: 857.875px;
+}
+
+.strix-customer-logos {
+  height: 120px;
+}
+
+.strix-product-overview {
+  height: 906px;
+}
+
+.strix-use-cases {
+  height: 864px;
+}
+
+.strix-sales-automation,
+.strix-management-insights {
+  height: 625px;
+}
+
+.strix-sales-workflow {
+  height: 1330.546875px;
+}
+
+.strix-data-cycle {
+  height: 793px;
+}
+
+.strix-product-functions {
+  height: 994px;
+}
+
+.strix-sales-challenges {
+  height: 1016px;
+}
+
+.strix-customer-stories {
+  height: 872px;
+}
+
+.strix-product-news {
+  height: 790px;
+}
+
+.strix-download-cta {
+  height: 529px;
+}
+
+@media (max-width: 1280px) {
+  .strix-product-overview {
+    height: 752px;
+  }
+
+  .strix-use-cases {
+    height: 883px;
+  }
+
+  .strix-sales-workflow {
+    height: 1116.15625px;
+  }
+
+  .strix-data-cycle {
+    height: 638px;
+  }
+
+  .strix-product-functions {
+    height: 896px;
+  }
+
+  .strix-sales-challenges {
+    height: 1013px;
+  }
+
+  .strix-customer-stories {
+    height: 1516px;
+  }
+
+  .strix-product-news {
+    height: 1287px;
+  }
+
+  .strix-download-cta {
+    height: 523px;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-hero {
+    height: 723.53125px;
+  }
+
+  .strix-customer-logos {
+    height: 72px;
+  }
+
+  .strix-product-overview {
+    height: 901px;
+  }
+
+  .strix-use-cases {
+    height: 988px;
+  }
+
+  .strix-sales-automation {
+    height: 1177px;
+  }
+
+  .strix-management-insights {
+    height: 1204px;
+  }
+
+  .strix-sales-workflow {
+    height: 1130.109375px;
+  }
+
+  .strix-data-cycle {
+    height: 1039px;
+  }
+
+  .strix-sales-challenges {
+    height: 865px;
+  }
+
+  .strix-customer-stories {
+    height: 1095px;
+  }
+
+  .strix-product-news {
+    height: 897px;
+  }
+
+  .strix-download-cta {
+    height: 467px;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-hero {
+    height: 801.578125px;
+  }
+
+  .strix-product-overview {
+    height: 720px;
+  }
+
+  .strix-use-cases {
+    height: 1155px;
+  }
+
+  .strix-sales-automation {
+    height: 868px;
+  }
+
+  .strix-management-insights {
+    height: 893px;
+  }
+
+  .strix-sales-workflow {
+    height: 864.03125px;
+  }
+
+  .strix-data-cycle {
+    height: 853px;
+  }
+
+  .strix-product-functions {
+    height: 744px;
+  }
+
+  .strix-sales-challenges {
+    height: 903px;
+  }
+
+  .strix-customer-stories {
+    height: 1877px;
+  }
+
+  .strix-product-news {
+    height: 1605px;
+  }
+
+  .strix-download-cta {
+    height: 442px;
+  }
+}

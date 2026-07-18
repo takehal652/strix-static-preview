@@ -1,0 +1,545 @@
+.strix-product-functions {
+  padding-top: 118px;
+  background: linear-gradient(#eeeff5, var(--color-paper) 80%);
+}
+
+.strix-product-functions__title {
+  margin-left: 8.3%;
+  font-family: var(--font-japanese);
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+.strix-product-functions__list {
+  position: absolute;
+  top: 235px;
+  left: calc(50% - 391px);
+  display: flex;
+  width: max-content;
+  gap: 0;
+}
+
+.strix-product-functions__list > li {
+  width: 783px;
+  flex: none;
+}
+
+.strix-function-card {
+  background: transparent;
+}
+
+.strix-function-card__visual {
+  width: 100%;
+  height: 410px;
+  border-radius: var(--radius-small) var(--radius-small) 0 0;
+  object-fit: cover;
+  background: #eaf2fe;
+}
+
+.strix-function-card__index,
+.strix-function-card__title,
+.strix-function-card__description {
+  margin-inline: 24px;
+}
+
+.strix-function-card__index {
+  margin-top: 28px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.strix-function-card__title {
+  margin-top: 18px;
+  font-family: var(--font-japanese);
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+.strix-function-card__description {
+  margin-top: 16px;
+  width: 568px;
+  color: rgb(3 3 15 / 70%);
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
+}
+
+.strix-product-functions__controls {
+  position: absolute;
+  top: 137px;
+  right: 8.3%;
+  z-index: 2;
+  display: flex;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--color-paper);
+}
+
+.strix-product-functions__controls button {
+  display: grid;
+  width: 50px;
+  height: 38px;
+  place-items: center;
+  color: var(--color-brand);
+  transition: background var(--motion-fast);
+}
+
+.strix-product-functions__controls button:hover {
+  background: #e9ecff;
+}
+
+.strix-product-functions__control-icon {
+  font-family: "Material Icons";
+  font-size: 19px;
+}
+
+@media (max-width: 1280px) {
+  .strix-product-functions__list > li {
+    width: 620px;
+  }
+
+  .strix-function-card__visual {
+    height: 350px;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-product-functions {
+    padding-top: 115px;
+  }
+
+  .strix-product-functions__title {
+    margin-left: 6%;
+    font-size: 30px;
+  }
+
+  .strix-product-functions__list {
+    top: 220px;
+    left: calc(50% - 260px);
+  }
+
+  .strix-product-functions__list > li {
+    width: 520px;
+  }
+
+  .strix-function-card__visual {
+    height: 290px;
+  }
+
+  .strix-product-functions__controls {
+    top: 125px;
+    right: 6%;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-product-functions {
+    padding-top: 80px;
+  }
+
+  .strix-product-functions__title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .strix-product-functions__list {
+    top: 154px;
+    left: 20px;
+    gap: 0;
+  }
+
+  .strix-product-functions__list > li {
+    width: 350px;
+  }
+
+  .strix-function-card__visual {
+    width: 340px;
+    height: 190px;
+    margin-inline: 5px;
+    border-radius: var(--radius-small);
+  }
+
+  .strix-function-card__index,
+  .strix-function-card__title,
+  .strix-function-card__description {
+    margin-inline: 17px;
+  }
+
+  .strix-function-card__index {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  .strix-function-card__title {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .strix-function-card__description {
+    width: 316px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .strix-product-functions__controls {
+    top: auto;
+    right: 20px;
+    bottom: 78px;
+  }
+}
+
+/* Phase 3: exact measured feature-carousel geometry */
+.strix-product-functions {
+  height: 612.484375px;
+  overflow: visible;
+  padding: 0;
+  background: linear-gradient(#03030f, var(--color-paper) 80%);
+}
+
+.strix-product-functions[data-visual-state="loaded"] {
+  height: 993.171875px;
+}
+
+.strix-product-functions::before {
+  position: absolute;
+  inset: 0 12px;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(rgb(255 255 255 / 90%), var(--color-paper));
+  content: "";
+}
+
+.strix-product-functions__title {
+  position: absolute;
+  top: 120px;
+  left: 118px;
+  z-index: 1;
+  width: max-content;
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  line-height: 50.4px;
+}
+
+.strix-product-functions__list {
+  top: 234.390625px;
+  left: calc(50% - 391.296875px);
+  z-index: 1;
+  transform: translateX(-782.59375px);
+}
+
+.strix-product-functions__list::before {
+  width: 734.59375px;
+  height: 407.6875px;
+  flex: none;
+  margin-inline: 24px;
+  border-radius: 8px;
+  background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-800x444_24535cfd-a45b-4cff-a537-618974ade2f6.gif")
+    center / 100% 100% no-repeat;
+  content: "";
+}
+
+.strix-product-functions__list > li {
+  width: 782.59375px;
+}
+
+.strix-function-card {
+  min-height: 638.78125px;
+}
+
+.strix-function-card__visual {
+  width: calc(100% - 48px);
+  height: 407.6875px;
+  margin-inline: 24px;
+  border-radius: 8px;
+  object-fit: fill;
+}
+
+.strix-function-card__index,
+.strix-function-card__title,
+.strix-function-card__description {
+  margin-inline: 36px;
+}
+
+.strix-function-card__index {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 13px;
+  letter-spacing: 0.39px;
+  line-height: 22.1px;
+}
+
+.strix-function-card__index::before {
+  width: 17px;
+  height: 11px;
+  flex: none;
+  margin-right: 6px;
+  background: url("https://storage.googleapis.com/studio-design-asset-files/projects/wQOV7BZNqD/s-17x11_bc7056cc-ce59-4201-a878-72fe101b65c2.svg")
+    center / contain no-repeat;
+  content: "";
+}
+
+.strix-function-card__title {
+  margin-top: 12px;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  line-height: 36px;
+}
+
+.strix-function-card__description {
+  width: 568.46875px;
+  margin-top: 12px;
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  line-height: 27px;
+}
+
+.strix-product-functions__controls {
+  top: 134.390625px;
+  right: 118px;
+  z-index: 1;
+  gap: 1px;
+  background: transparent;
+}
+
+.strix-product-functions__controls button {
+  width: 48px;
+  height: 36px;
+  background: #fafafa;
+}
+
+.strix-product-functions__controls button:first-child {
+  border-radius: 1000px 0 0 1000px;
+}
+
+.strix-product-functions__controls button:last-child {
+  border-radius: 0 1000px 1000px 0;
+}
+
+@media (max-width: 1280px) and (min-width: 841px) {
+  .strix-product-functions {
+    height: 627.890625px;
+  }
+
+  .strix-product-functions[data-visual-state="loaded"] {
+    height: 894.578125px;
+  }
+
+  .strix-product-functions__title {
+    top: 120px;
+    left: 68px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    line-height: 44.8px;
+  }
+
+  .strix-product-functions__list {
+    top: 228.796875px;
+    left: calc(50% - 288.59375px);
+    transform: translateX(-577.1875px);
+  }
+
+  .strix-product-functions__list > li {
+    width: 577.1875px;
+  }
+
+  .strix-function-card {
+    min-height: 545.78125px;
+  }
+
+  .strix-function-card__visual {
+    width: calc(100% - 48px);
+    height: 293.6875px;
+  }
+
+  .strix-product-functions__list::before {
+    width: 529.1875px;
+    height: 293.6875px;
+  }
+
+  .strix-function-card__title {
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    line-height: 33px;
+  }
+
+  .strix-function-card__description {
+    width: 404.140625px;
+  }
+
+  .strix-product-functions__controls {
+    top: 128.796875px;
+    right: 68px;
+  }
+}
+
+@media (max-width: 840px) {
+  .strix-product-functions {
+    height: 557.09375px;
+  }
+
+  .strix-product-functions[data-visual-state="loaded"] {
+    height: 895px;
+  }
+
+  .strix-product-functions::before {
+    inset-inline: 8px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .strix-product-functions__title {
+    top: 80px;
+    left: 50%;
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    line-height: 42px;
+    transform: translateX(-50%);
+  }
+
+  .strix-product-functions__list {
+    top: 178px;
+    left: 40px;
+    transform: translateX(-688px);
+  }
+
+  .strix-product-functions__list > li {
+    width: 688px;
+  }
+
+  .strix-function-card {
+    min-height: 556.171875px;
+  }
+
+  .strix-function-card__visual {
+    width: calc(100% - 32px);
+    height: 364.078125px;
+    margin-inline: 16px;
+  }
+
+  .strix-product-functions__list::before {
+    width: 656px;
+    height: 364.078125px;
+    margin-inline: 16px;
+  }
+
+  .strix-function-card__index,
+  .strix-function-card__title,
+  .strix-function-card__description {
+    margin-inline: 28px;
+  }
+
+  .strix-function-card__index {
+    margin-top: 32px;
+  }
+
+  .strix-function-card__title {
+    margin-top: 12px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+  }
+
+  .strix-function-card__description {
+    width: calc(100% - 56px);
+    margin-top: 12px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 27px;
+  }
+
+  .strix-product-functions__controls {
+    top: 770.171875px;
+    right: 40px;
+    bottom: auto;
+  }
+
+  .strix-product-functions__controls button {
+    height: 44px;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-product-functions {
+    height: 579.109375px;
+  }
+
+  .strix-product-functions[data-visual-state="loaded"] {
+    height: 742.609375px;
+  }
+
+  .strix-product-functions__title {
+    width: max-content;
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    line-height: 33.6px;
+  }
+
+  .strix-product-functions__list {
+    top: 153.59375px;
+    left: 20px;
+    transform: translateX(-350px);
+  }
+
+  .strix-product-functions__list > li {
+    width: 350px;
+  }
+
+  .strix-function-card {
+    min-height: 429.015625px;
+  }
+
+  .strix-function-card__visual {
+    width: 340px;
+    height: 188.6875px;
+    margin-inline: 5px;
+  }
+
+  .strix-product-functions__list::before {
+    width: 340px;
+    height: 188.6875px;
+    margin-inline: 5px;
+  }
+
+  .strix-function-card__index,
+  .strix-function-card__title,
+  .strix-function-card__description {
+    margin-inline: 17px;
+  }
+
+  .strix-function-card__index {
+    margin-top: 16px;
+    font-size: 12px;
+    letter-spacing: 0.36px;
+    line-height: 20.4px;
+  }
+
+  .strix-function-card__index::before {
+    margin-right: 6px;
+  }
+
+  .strix-function-card__title {
+    margin-top: 12px;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 27px;
+  }
+
+  .strix-function-card__description {
+    width: 316px;
+    margin-top: 12px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 25.2px;
+  }
+
+  .strix-product-functions__controls {
+    top: 618.609375px;
+    right: 20px;
+  }
+}
