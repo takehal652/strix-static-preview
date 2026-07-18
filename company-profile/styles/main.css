@@ -379,7 +379,7 @@ main {
 .strix-company-service__card {
   position: relative;
   width: var(--strix-company-content);
-  height: 350px;
+  min-height: 350px;
   margin: 80px var(--strix-company-canvas-gutter) 0 auto;
   overflow: hidden;
   padding: 40px 400px 40px 32px;
@@ -428,13 +428,14 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   width: 490px;
-  height: 350px;
 }
 .strix-company-service__visual > img {
   width: 100%;
   height: 100%;
   max-width: none;
+  object-fit: cover;
 }
 
 .strix-company-directors {
