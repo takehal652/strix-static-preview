@@ -851,13 +851,10 @@ main {
   .strix-company-business__diagram-scroll {
     width: 100%;
     margin-top: 32px;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    scrollbar-width: thin;
   }
 
   .strix-company-business__diagram {
-    width: 720px;
+    width: 100%;
     height: auto;
   }
 
