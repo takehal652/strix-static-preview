@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poc.strixai.jp/sitemap-index.xml
