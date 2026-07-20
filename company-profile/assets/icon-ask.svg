@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-3">
+<path id="Rectangle 34626979" d="M11 17H80V28H20V66H11V17Z" fill="url(#paint0_linear_0_34)"/>
+<path id="Union" d="M64 78L64.6402 77.2318C64.4605 77.082 64.2339 77 64 77V78ZM20 78H19C19 78.5523 19.4477 79 20 79V78ZM20 28V27C19.4477 27 19 27.4477 19 28H20ZM90 28H91C91 27.4477 90.5523 27 90 27V28ZM90 78V79C90.5523 79 91 78.5523 91 78H90ZM76 78V77C75.4477 77 75 77.4477 75 78H76ZM76 88L75.3598 88.7682C75.6579 89.0166 76.0728 89.0702 76.4242 88.9056C76.7755 88.741 77 88.388 77 88H76ZM64 78V77H20V78V79H64V78ZM20 78H21V28H20H19V78H20ZM20 28V29H90V28V27H20V28ZM90 28H89V78H90H91V28H90ZM90 78V77H76V78V79H90V78ZM76 78H75V88H76H77V78H76ZM76 88L76.6402 87.2318L64.6402 77.2318L64 78L63.3598 78.7682L75.3598 88.7682L76 88Z" fill="var(--stroke-0, #03030F)"/>
+<path id="Rectangle" d="M80 24V16H10V66H15.6" stroke="var(--stroke-0, #03030F)" stroke-width="2"/>
+<g id="Group 1216124571">
+<circle id="Ellipse" cx="41.5" cy="52.5" r="2.5" fill="var(--fill-0, #03030F)"/>
+<circle id="Ellipse_2" cx="55.5" cy="52.5" r="2.5" fill="var(--fill-0, #03030F)"/>
+<circle id="Ellipse_3" cx="69.5" cy="52.5" r="2.5" fill="var(--fill-0, #03030F)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_34" x1="80" y1="41.5002" x2="11" y2="41.5002" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EDB5A0"/>
+<stop offset="1" stop-color="#9BACFF"/>
+</linearGradient>
+</defs>
+</svg>

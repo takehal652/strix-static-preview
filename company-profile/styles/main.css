@@ -1,0 +1,1127 @@
+:root {
+  --strix-company-ink: #03030f;
+  --strix-company-paper: #ffffff;
+  --strix-company-brand: #3c4eee;
+  --strix-company-page-max: 1440px;
+  --strix-company-canvas-gutter: max(0px, calc((100vw - var(--strix-company-page-max)) / 2));
+  --strix-company-wide: min(1360px, calc(100vw - 80px));
+  --strix-company-content: 1020px;
+  --strix-company-sans: "42dot Sans", Inter, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+}
+
+@font-face {
+  font-family: "42dot Sans";
+  src: url("../assets/42dot-sans-variable.ttf") format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  min-width: 1200px;
+  background: var(--strix-company-paper);
+}
+body {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0;
+  color: var(--strix-company-ink);
+  font-family: var(--strix-company-sans);
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p,
+figure,
+dl,
+dd {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.strix-company-header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  width: 682px;
+  height: 62px;
+  align-items: center;
+  gap: 24px;
+  border: 0.5px solid rgb(255 255 255 / 40%);
+  border-radius: 12px;
+  padding: 8px 8px 8px 20px;
+  color: var(--strix-company-paper);
+  background: rgb(3 3 15 / 80%);
+  box-shadow: 0 8px 20px rgb(3 3 15 / 15%);
+  backdrop-filter: blur(25px);
+  transform: translateX(-50%);
+}
+.strix-company-header__brand,
+.strix-company-footer__brand {
+  display: block;
+  width: 40px;
+  height: 33px;
+}
+.strix-company-logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.strix-company-logo__symbol,
+.strix-company-logo__wordmark {
+  position: absolute;
+  inset: 0;
+}
+.strix-company-logo__symbol {
+  overflow: hidden;
+}
+.strix-company-logo__symbol img {
+  position: absolute;
+  top: -35.71%;
+  left: -21.43%;
+  width: 142.86%;
+  height: 171.43%;
+  max-width: none;
+}
+.strix-company-logo__wordmark {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.strix-company-header__navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 4px;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.strix-company-header__navigation > a:not(.strix-company-header__download) {
+  padding: 0 8px;
+}
+.strix-company-header__download {
+  display: grid;
+  height: 46px;
+  place-items: center;
+  border-radius: 8px;
+  padding: 0 24px;
+  background: var(--strix-company-brand);
+}
+.strix-company-page-label {
+  position: fixed;
+  top: 104px;
+  right: var(--strix-company-canvas-gutter);
+  z-index: 10;
+  display: grid;
+  width: 130px;
+  height: 48px;
+  place-items: center;
+  border-left: 3px solid var(--strix-company-paper);
+  padding: 8px 32px;
+  color: var(--strix-company-paper);
+  background: rgb(3 3 15 / 80%);
+  font-family: "Yu Gothic", YuGothic, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+main {
+  overflow: hidden;
+}
+.strix-company-hero {
+  position: relative;
+  height: 602px;
+  overflow: hidden;
+  padding: 240px 40px 80px;
+}
+.strix-company-hero__content {
+  position: relative;
+  z-index: 1;
+  width: var(--strix-company-wide);
+  margin-inline: auto;
+}
+.strix-company-hero--mission {
+  color: var(--strix-company-paper);
+  background: var(--strix-company-ink);
+}
+.strix-company-hero--vision {
+  background: linear-gradient(180deg, #fff 0%, #f4f5f9 100%);
+}
+.strix-company-hero__decoration {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.strix-company-hero__decoration--mission-top {
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 400px;
+}
+.strix-company-hero__decoration--mission-bottom {
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 150px;
+}
+.strix-company-hero__decoration--vision {
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 400px;
+}
+.strix-company-hero__decoration > img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+.strix-company-eyebrow {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+.strix-company-rule {
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin-top: 20px;
+  background: currentcolor;
+}
+.strix-company-hero h1,
+.strix-company-hero h2 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-hero__copy {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.strix-company-values {
+  height: 759px;
+  padding: 120px 40px;
+  background: var(--strix-company-paper);
+}
+.strix-company-values__intro {
+  width: var(--strix-company-wide);
+  margin-inline: auto;
+}
+.strix-company-values__copy {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.strix-company-values__list {
+  display: flex;
+  width: var(--strix-company-wide);
+  margin: 56px auto 0;
+  padding: 0;
+  list-style: none;
+}
+.strix-company-value-card {
+  position: relative;
+  display: flex;
+  width: 340px;
+  height: 335px;
+  flex-direction: column;
+  border-left: 1px solid rgb(3 3 15 / 10%);
+  padding: 0 32px;
+}
+.strix-company-value-card__number {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.strix-company-value-card > img,
+.strix-company-value-card__icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 80px;
+  object-fit: contain;
+  object-position: left center;
+}
+.strix-company-value-card__icon {
+  position: relative;
+  display: block;
+  flex: none;
+}
+.strix-company-value-card__bar {
+  position: absolute;
+  display: block;
+  border: 2px solid var(--strix-company-ink);
+}
+.strix-company-value-card__bar--tall {
+  top: 40px;
+  left: 38px;
+  width: 24px;
+  height: 55px;
+}
+.strix-company-value-card__bar--medium {
+  top: 59px;
+  left: 62px;
+  width: 24px;
+  height: 36px;
+}
+.strix-company-value-card__bar--short {
+  top: 68px;
+  left: 14px;
+  width: 24px;
+  height: 27px;
+}
+.strix-company-value-card__bar--tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.strix-company-value-card__cross {
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+}
+.strix-company-value-card h2 {
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-value-card p {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+
+.strix-company-section-heading {
+  width: var(--strix-company-wide);
+  margin-inline: auto;
+}
+.strix-company-section-heading h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+.strix-company-section-heading p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+.strix-company-section-heading--light {
+  color: var(--strix-company-paper);
+}
+.strix-company-business,
+.strix-company-service {
+  height: 962px;
+  padding: 40px;
+  color: var(--strix-company-paper);
+  background: var(--strix-company-ink);
+}
+.strix-company-business__content {
+  width: var(--strix-company-content);
+  margin: 80px var(--strix-company-canvas-gutter) 0 auto;
+}
+.strix-company-business__intro {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.strix-company-business__diagram-scroll {
+  width: 1020px;
+  margin-top: 40px;
+}
+.strix-company-business__diagram {
+  display: block;
+  width: 1020px;
+  height: 600px;
+  max-width: none;
+}
+
+.strix-company-service {
+  height: 608px;
+}
+.strix-company-service__card {
+  position: relative;
+  width: var(--strix-company-content);
+  min-height: 350px;
+  margin: 80px var(--strix-company-canvas-gutter) 0 auto;
+  overflow: hidden;
+  padding: 40px 400px 40px 32px;
+  background: #242424;
+}
+.strix-company-service__copy > p:first-child {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-service__copy h3 {
+  margin-top: 4px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-service__description {
+  margin-top: 35px;
+  color: rgb(255 255 255 / 80%);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+.strix-company-service__link {
+  display: inline-flex;
+  min-height: 44px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+  border: 0.5px solid rgb(255 255 255 / 40%);
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.strix-company-service__link span {
+  flex: none;
+}
+.strix-company-service__visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 490px;
+}
+.strix-company-service__visual > img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.strix-company-directors {
+  height: 1384px;
+  padding: 40px;
+  background: linear-gradient(#e8e8e8 0%, var(--strix-company-paper) 56%);
+}
+.strix-company-directors__list {
+  display: grid;
+  width: var(--strix-company-content);
+  gap: 40px;
+  margin: 80px var(--strix-company-canvas-gutter) 0 auto;
+}
+.strix-company-director {
+  display: flex;
+  height: 543px;
+  align-items: center;
+  gap: 24px;
+}
+.strix-company-director > img {
+  width: 408px;
+  height: 543px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.strix-company-director__details {
+  width: 588px;
+  padding: 0 16px;
+}
+.strix-company-director__details > p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-director__details h3 {
+  margin-top: 4px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-director__details > p:last-child {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+
+.strix-company-profile {
+  height: 730px;
+  padding: 40px;
+}
+.strix-company-profile__table {
+  width: 850px;
+  margin: 80px var(--strix-company-canvas-gutter) 0 auto;
+}
+.strix-company-profile__table > div {
+  display: grid;
+  min-height: 64px;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+  align-items: center;
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  padding: 20px 0;
+}
+.strix-company-profile__table dt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.strix-company-profile__table dd {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.strix-company-profile__table > div:nth-child(6) {
+  min-height: 88px;
+}
+
+.strix-company-banner {
+  height: 380px;
+  padding: 40px;
+}
+.strix-company-banner__gradient {
+  display: block;
+  width: min(1360px, calc(100vw - 80px));
+  height: 300px;
+  margin-inline: auto;
+  max-width: none;
+}
+
+.strix-company-footer {
+  position: relative;
+  height: 589px;
+  overflow: hidden;
+  color: var(--strix-company-paper);
+  background: var(--strix-company-ink);
+}
+.strix-company-footer__main {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.strix-company-footer__top {
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+}
+.strix-company-footer__brand {
+  width: 90px;
+  height: 75px;
+  font-size: 14px;
+}
+.strix-company-footer__brand span {
+  font-size: 13px;
+}
+.strix-company-footer__actions {
+  display: flex;
+  gap: 16px;
+  padding-top: 12px;
+}
+.strix-company-footer__actions a {
+  display: grid;
+  height: 51px;
+  place-items: center;
+  border: 0.5px solid rgb(255 255 255 / 40%);
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.strix-company-footer__actions a:last-child {
+  background: var(--strix-company-brand);
+}
+.strix-company-footer__navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 64px;
+}
+.strix-company-footer__navigation div {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+.strix-company-footer__navigation h2 {
+  margin: 0 0 22px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.07em;
+}
+.strix-company-footer__navigation a {
+  width: max-content;
+  padding: 10px 0;
+  color: rgb(255 255 255 / 50%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.strix-company-footer__bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 calc((100% - 1120px) / 2);
+  color: var(--strix-company-paper);
+  background: #76787f;
+}
+.strix-company-footer__bottom div {
+  display: flex;
+  gap: 40px;
+}
+.strix-company-footer__bottom a,
+.strix-company-footer__bottom small {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.strix-company-footer__bottom a {
+  text-decoration: underline;
+}
+.strix-company-footer__bottom small {
+  color: rgb(255 255 255 / 50%);
+}
+.strix-company-footer__character {
+  position: absolute;
+  right: 20px;
+  bottom: -8px;
+  width: 156px;
+  height: 156px;
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --strix-company-wide: calc(100vw - 64px);
+    --strix-company-content: min(1020px, calc(100vw - 200px));
+  }
+
+  html,
+  body {
+    min-width: 0;
+  }
+
+  .strix-company-values,
+  .strix-company-business,
+  .strix-company-service,
+  .strix-company-directors,
+  .strix-company-profile {
+    height: auto;
+  }
+
+  .strix-company-values {
+    min-height: 680px;
+    padding: 96px 32px;
+  }
+
+  .strix-company-values__list {
+    width: 100%;
+  }
+
+  .strix-company-value-card {
+    width: 25%;
+    min-width: 0;
+    padding-inline: 24px;
+  }
+
+  .strix-company-value-card h2 {
+    font-size: 21px;
+  }
+
+  .strix-company-business,
+  .strix-company-service,
+  .strix-company-directors,
+  .strix-company-profile {
+    padding: 40px 32px 96px;
+  }
+
+  .strix-company-business__diagram-scroll,
+  .strix-company-business__diagram {
+    width: 100%;
+  }
+
+  .strix-company-business__diagram {
+    height: auto;
+  }
+
+  .strix-company-service__card,
+  .strix-company-directors__list,
+  .strix-company-profile__table {
+    width: var(--strix-company-content);
+  }
+
+  .strix-company-director {
+    height: auto;
+  }
+
+  .strix-company-director > img {
+    width: 40%;
+    height: auto;
+    aspect-ratio: 408 / 543;
+  }
+
+  .strix-company-director__details {
+    width: 60%;
+  }
+
+  .strix-company-banner {
+    height: auto;
+    padding: 32px;
+  }
+
+  .strix-company-banner__gradient {
+    width: 100%;
+    height: auto;
+  }
+
+  .strix-company-footer__main {
+    width: min(1120px, calc(100% - 64px));
+  }
+
+  .strix-company-footer__bottom {
+    padding-inline: 32px;
+  }
+}
+
+@media (max-width: 840px) {
+  :root {
+    --strix-company-wide: 100%;
+    --strix-company-content: 100%;
+  }
+
+  .strix-company-header {
+    top: 12px;
+    width: calc(100% - 24px);
+    height: 60px;
+    gap: 12px;
+    padding: 7px 7px 7px 16px;
+  }
+
+  .strix-company-header__navigation {
+    margin-left: auto;
+  }
+
+  .strix-company-header__navigation > a:not(.strix-company-header__download) {
+    display: none;
+  }
+
+  .strix-company-header__download {
+    height: 44px;
+    padding-inline: 20px;
+    font-size: 13px;
+  }
+
+  .strix-company-page-label {
+    display: none;
+  }
+
+  .strix-company-hero {
+    height: auto;
+    min-height: 560px;
+    padding: 184px 24px 72px;
+  }
+
+  .strix-company-hero__decoration--mission-top,
+  .strix-company-hero__decoration--vision {
+    width: min(700px, 88vw);
+    height: auto;
+    aspect-ratio: 7 / 4;
+  }
+
+  .strix-company-hero__decoration--mission-bottom {
+    width: min(300px, 55vw);
+    height: auto;
+    aspect-ratio: 2 / 1;
+  }
+
+  .strix-company-hero h1,
+  .strix-company-hero h2 {
+    font-size: clamp(30px, 5.3vw, 40px);
+  }
+
+  .strix-company-hero__copy br,
+  .strix-company-values__copy br,
+  .strix-company-business__intro br {
+    display: none;
+  }
+
+  .strix-company-values {
+    min-height: 0;
+    padding: 80px 24px;
+  }
+
+  .strix-company-values__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 48px;
+  }
+
+  .strix-company-value-card {
+    width: auto;
+    height: 300px;
+    border-top: 1px solid rgb(3 3 15 / 10%);
+    padding: 20px;
+  }
+
+  .strix-company-value-card > img,
+  .strix-company-value-card__icon {
+    width: 88px;
+    height: 88px;
+    margin-top: 48px;
+  }
+
+  .strix-company-value-card h2 {
+    margin-top: 44px;
+    font-size: 20px;
+  }
+
+  .strix-company-value-card p {
+    font-size: 12px;
+  }
+
+  .strix-company-business,
+  .strix-company-service,
+  .strix-company-directors,
+  .strix-company-profile {
+    padding: 64px 24px 80px;
+  }
+
+  .strix-company-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .strix-company-business__content,
+  .strix-company-service__card,
+  .strix-company-directors__list,
+  .strix-company-profile__table {
+    width: 100%;
+    margin: 56px 0 0;
+  }
+
+  .strix-company-business__diagram-scroll {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .strix-company-business__diagram {
+    width: 100%;
+    height: auto;
+  }
+
+  .strix-company-service__card {
+    height: auto;
+    padding: 32px 32px 0;
+  }
+
+  .strix-company-service__description {
+    margin-top: 24px;
+  }
+
+  .strix-company-service__link {
+    margin-top: 28px;
+    gap: 12px;
+    padding: 14px 12px;
+    white-space: nowrap;
+  }
+
+  .strix-company-service__visual {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: min(490px, calc(100% + 32px));
+    height: auto;
+    aspect-ratio: 7 / 5;
+    margin: 32px -32px 0 auto;
+  }
+
+  .strix-company-directors {
+    background: linear-gradient(#e8e8e8 0%, var(--strix-company-paper) 42%);
+  }
+
+  .strix-company-directors__list {
+    gap: 64px;
+  }
+
+  .strix-company-director {
+    display: grid;
+    grid-template-columns: minmax(220px, 40%) minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .strix-company-director > img,
+  .strix-company-director__details {
+    width: 100%;
+  }
+
+  .strix-company-director__details {
+    padding-right: 0;
+  }
+
+  .strix-company-profile__table > div {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .strix-company-banner {
+    padding: 24px;
+  }
+
+  .strix-company-footer {
+    height: auto;
+  }
+
+  .strix-company-footer__main {
+    width: 100%;
+    padding: 64px 24px 88px;
+  }
+
+  .strix-company-footer__navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px 24px;
+  }
+
+  .strix-company-footer__navigation div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .strix-company-footer__bottom {
+    position: relative;
+    display: grid;
+    height: auto;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .strix-company-footer__bottom div {
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+
+  .strix-company-footer__character {
+    right: 8px;
+    bottom: 0;
+    width: 112px;
+    height: 112px;
+  }
+}
+
+@media (max-width: 540px) {
+  .strix-company-header__brand {
+    width: 36px;
+    height: 30px;
+  }
+
+  .strix-company-header__download {
+    padding-inline: 16px;
+  }
+
+  .strix-company-hero {
+    min-height: 600px;
+    padding: 168px 20px 64px;
+  }
+
+  .strix-company-eyebrow {
+    font-size: 20px;
+  }
+
+  .strix-company-hero h1,
+  .strix-company-hero h2 {
+    font-size: 30px;
+    line-height: 1.45;
+  }
+
+  .strix-company-hero__copy {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .strix-company-values {
+    padding: 64px 20px;
+  }
+
+  .strix-company-values__copy {
+    font-size: 14px;
+  }
+
+  .strix-company-value-card {
+    height: 278px;
+    padding: 16px 12px;
+  }
+
+  .strix-company-value-card > img,
+  .strix-company-value-card__icon {
+    width: 72px;
+    height: 72px;
+    margin-top: 40px;
+  }
+
+  .strix-company-value-card h2 {
+    margin-top: 36px;
+    font-size: 17px;
+  }
+
+  .strix-company-value-card p {
+    font-size: 11px;
+  }
+
+  .strix-company-business,
+  .strix-company-service,
+  .strix-company-directors,
+  .strix-company-profile {
+    padding: 56px 20px 72px;
+  }
+
+  .strix-company-business__intro,
+  .strix-company-service__description,
+  .strix-company-director__details > p:last-child {
+    font-size: 14px;
+  }
+
+  .strix-company-service__card {
+    padding: 28px 24px 0;
+  }
+
+  .strix-company-service__copy h3,
+  .strix-company-director__details h3 {
+    font-size: 28px;
+  }
+
+  .strix-company-service__link {
+    font-size: 13px;
+  }
+
+  .strix-company-service__visual {
+    width: calc(100% + 48px);
+    margin: 32px -24px 0;
+  }
+
+  .strix-company-director {
+    display: block;
+  }
+
+  .strix-company-director > img {
+    border-radius: 24px;
+  }
+
+  .strix-company-director__details {
+    padding: 28px 0 0;
+  }
+
+  .strix-company-profile__table > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 0;
+  }
+
+  .strix-company-profile__table dd {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .strix-company-banner {
+    padding: 20px;
+  }
+
+  .strix-company-footer__main {
+    padding: 56px 20px 80px;
+  }
+
+  .strix-company-footer__top {
+    display: block;
+    height: auto;
+  }
+
+  .strix-company-footer__actions {
+    margin-top: 28px;
+  }
+
+  .strix-company-footer__actions a {
+    flex: 1;
+    padding-inline: 12px;
+    text-align: center;
+  }
+
+  .strix-company-footer__navigation {
+    margin-top: 56px;
+  }
+
+  .strix-company-footer__bottom {
+    padding: 24px 20px 112px;
+  }
+
+  .strix-company-footer__bottom div {
+    display: grid;
+    gap: 14px;
+  }
+
+  .strix-company-footer__bottom small {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 260px) {
+  .strix-company-service__link {
+    gap: 6px;
+    padding-inline: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 220px) {
+  .strix-company-service__link {
+    gap: 4px;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+}
